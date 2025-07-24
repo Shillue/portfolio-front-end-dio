@@ -665,11 +665,14 @@ body {
     color: var(--primary-color);
 }
 
-.contact .menu__link:hover span,
-.contact .menu__link:hover .menu__icon{
+.contact .menu__link:hover {
     color: var(--link-color);
     transform: scale(1.1);
     transition: transform 0.3s, color 0.3s;
+}
+
+.contact .menu__link:hover .menu__icon{
+    color: var(--link-color);
 }
 
 .contact .btn {
