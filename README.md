@@ -64,7 +64,7 @@ Este projeto foi desenvolvido como parte do desafio **"Construindo seu Portfóli
 
 ## 🔗 Link do Projeto
 
-Acesse aqui: [Ver Portfólio Online]() 
+Acesse aqui: [Ver Portfólio Online](https://shillue.github.io/portfolio-front-end-dio/) 
 
 ---
 
