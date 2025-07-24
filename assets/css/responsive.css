@@ -1,0 +1,422 @@
+/*Responsive*/
+/* Screen from 768px */
+@media (min-width:768px) {
+
+    /*Header*/
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 5rem;
+        padding: 0.5rem 6rem;
+    }
+
+    /*Menu Mobile*/
+    .header .header__mobile {
+        display: none;
+    }
+
+    /* Menu Desktop */
+    .header .header__desktop {
+        display: flex;
+        order: 2;
+    }
+
+    .header__brand {
+        order: 1;
+    }
+
+    .header__toggle {
+        order: 3;
+    }
+
+    /* Main */
+    /* home, projects, about and contact */
+    .main__home,
+    .projects,
+    .main__about,
+    .contact {
+        padding: 8rem;
+    }
+
+    .home__text h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .home__text p {
+        font-size: 1.5rem;
+    }
+
+    /*Button Home*/
+    .home__btn {
+        width: 90%;
+    }
+
+    /*Main - Section Technologies*/
+    .main__technologies {
+        padding: 6rem;
+    }
+
+    /*Title Technologies, Projects and About- h2*/
+    .main__technologies h2,
+    .projects h2,
+    .about__description h2 {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        line-height: 3.25rem;
+        letter-spacing: 0.1rem;
+    }
+
+    /* Main Section projects */
+    .card__buttons .btn {
+        width: auto;
+        margin-top: 2rem;
+    }
+
+    /* Main - Section About - Content1*/
+    .about__photo {
+        width: 80%;
+        margin: auto auto;
+    }
+
+    /*Main - Section Contact*/
+    .contact h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        line-height: 3.25rem;
+        letter-spacing: 0.1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+    }
+}
+
+/*Responsive*/
+/* Screen from 992px */
+@media (min-width:992px) {
+
+    /*Main*/
+    .main__home {
+        padding: 12rem 8rem;
+    }
+
+    /* Main Section projects */
+    .projects {
+        padding: 8rem 2rem;
+    }
+
+    .projects__card {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .projects__card.card__reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .card__cover {
+        width: 55%;
+    }
+
+    .card__body {
+        gap: 1rem;
+        margin: 0rem 0.25rem;
+        width: 45%;
+    }
+
+    .card__body .technologies__list {
+        gap: 1rem;
+    }
+
+    .card__buttons {
+        margin-top: 0rem;
+        gap: 0.2rem;
+        width: 100%;
+    }
+
+    .card__buttons .btn {
+        margin-top: 0rem;
+    }
+
+    .projects__container .btn {
+        width: 35%;
+        padding: 0.9rem 0.25rem;
+    }
+
+    /* About */
+    /* Main - Section About - Content1*/
+    .main__about {
+        gap: 4rem;
+        padding: 6rem 1rem;
+    }
+
+    /*Content1 and Content2*/
+    .about__content1,
+    .about__content2 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .about__photo {
+        width: 30%;
+    }
+
+    .about__description h2 {
+        text-align: left;
+    }
+
+    .about__description {
+        width: 60%;
+        align-items: flex-start;
+        padding: 0.25rem;
+    }
+
+    .about__icons i {
+        font-size: 1.5rem;
+    }
+
+    .description__buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .description__buttons .btn {
+        padding: 0.75rem 0.1rem;
+    }
+
+    /*Main - Section About - Content2*/
+    .about__content2 .col1 {
+        flex: 2;
+    }
+
+    .about__content2 .col2 {
+        flex: 2;
+    }
+
+    /*Main - Section Contact*/
+    .contact {
+        padding: 8rem 10rem 8rem;
+    }
+
+}
+
+/* Screen from 1200px */
+@media (min-width:1200px) {
+
+    /* Header */
+    .header #toggleTheme {
+        font-size: 1.75rem;
+    }
+
+    .header #toggleTheme:hover {
+        font-size: 1.9rem;
+    }
+
+    /*Menu*/
+    .menu__text {
+        font-size: 1rem;
+    }
+
+    .menu__icon {
+        font-size: 1.8rem;
+    }
+
+    /*Main*/
+    /*Main - Section Home*/
+    .main__home {
+        padding: 17rem 9rem 9rem;
+    }
+
+    .home__text {
+        padding: 0.5rem 1rem;
+    }
+
+    .home__text h1 {
+        font-size: 4.5rem;
+        line-height: 5rem;
+        letter-spacing: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .home__btn {
+        width: 30%;
+    }
+
+    /*Main - Section Technologies*/
+    .main__technologies {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10rem 2rem 9rem;
+    }
+
+    .main__technologies h2 {
+        line-height: 3.5rem;
+        letter-spacing: 0.25rem;
+        text-align: left;
+        width: 60%;
+    }
+
+    .main__technologies .technologies__list {
+        gap: 1rem;
+        width: 30%;
+    }
+
+    .main__technologies .technologies__item {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .main__technologies .technologies__logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /*Title Projects and About- h2*/
+    .projects h2,
+    .about__description h2 {
+        line-height: 3.5rem;
+        letter-spacing: 0.25rem;
+        text-align: left;
+    }
+
+    /*Main - Section Project*/
+    .card__body .card__title {
+        font-size: 2rem;
+    }
+
+    .card__body .card__description {
+        font-size: 1.15rem;
+    }
+
+    .card__body .card__item {
+        font-size: 1.15rem;
+    }
+
+    /* Main Section About */
+    .main__about {
+        padding: 8rem 4rem 6rem;
+        gap: 5rem;
+    }
+
+    /* Main - Section About - Content1*/
+    .main__about {
+        padding: 8rem 4rem 6rem;
+    }
+
+    .about__description .about__icons span {
+        font-size: 1.15rem;
+    }
+
+    .about__content2 .col1 .row1 h3,
+    .about__content2 .col1 .row2 h3,
+    .about__content2 .col2 h3 {
+        font-size: 2rem;
+    }
+
+    .about__content2 .col1 .row2 h4 {
+        font-size: 1.30rem;
+    }
+
+    .accordion__header span,
+    .accordion__header i {
+        font-size: 1.15rem;
+    }
+
+    /*Paragrafos*/
+    .home__text p,
+    .about__description p,
+    .about__content2 .col1 .row2 p,
+    .accordion__body p,
+    .about__content2 .col1 .row2 span,
+    .about__content2 .col1 .row2 p,
+    .about__content2 .col1 .row2 .about__item,
+    .contact p,
+    .contact .menu__link span {
+        font-size: 1.15rem;
+    }
+
+    /* Main Section Contact */
+    .contact {
+        padding: 9rem 11rem 9rem;
+    }
+
+    .contact .email {
+        font-size: 1.5rem;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.9;
+        padding: 4rem
+    }
+
+}
+
+/* 1400px */
+@media (min-width: 1400px) {
+
+    /* Header */
+    .header {
+        padding: 1rem 12rem;
+    }
+
+    /* Main - Section Home */
+    .main__home {
+        padding: 15rem 12rem 12rem;
+    }
+
+    /*Main - Section Technologies*/
+    .main__technologies {
+        padding: 10rem 11rem 10rem;
+        gap: 0.5rem;
+    }
+
+    /* Main Section projects */
+    .projects {
+        padding: 8rem 15rem;
+        gap: 3rem;
+    }
+
+    .projects__container {
+        gap: 3rem;
+    }
+
+    .projects__card {
+        gap: 1.5rem;
+    }
+
+    .card__cover {
+        width: 55%;
+    }
+
+    .card__body {
+        gap: 1rem;
+    }
+
+    /* Main - Section About */
+    .main__about {
+        gap: 4rem;
+        padding: 8rem 15rem 6rem;
+    }
+
+    /* Main Section Contact */
+    .contact {
+        padding: 9rem 15rem 4rem;
+    }
+
+}

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfólio da desenvolvedora front-end Shilluê para compartilhar projetos e habilidades desenvolvidas." />
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+  <!-- importar os icones do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+  <!-- icone da aba -->
+  <link rel="icon" href="./assets/images/faviconHome/icon-dark.png" type="image/png" />
+  <title>Shilluê Portfólio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Menu Desktop -->
+    <section class="header__desktop">
+      <nav class="header__nav" aria-label="Menu principal para desktop">
+        <ul class="menu menu__principal">
+          <li class="menu__item">
+            <a href="#home" class="menu__link">
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#projetos" class="menu__link">
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#sobre" class="menu__link">
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#contato" class="menu__link">
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Logo -->
+    <div class="header__brand">
+      <img id="headerBrand" src="./assets/images/faviconHome/icon-dark.png" alt="Logo S" class="brand__logo" />
+    </div>
+    <!-- Toggle Theme  -->
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-brightness-high" aria-label="button toggle Theme"></i>
+    </div>
+
+    <!-- Menu Section Mobile -->
+    <section class="header__mobile">
+      <nav class="nav__mobile" aria-label="Menu principal para mobile">
+        <ul class="menu menu__mobile">
+          <li class="menu__item">
+            <a href="#home" class="menu__link active">
+              <i class="menu__icon bi bi-house-door"></i>
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#projetos" class="menu__link">
+              <i class="menu__icon bi bi-window"></i>
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#sobre" class="menu__link">
+              <i class="menu__icon bi bi-person"></i>
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#contato" class="menu__link">
+              <i class="menu__icon bi bi-envelope"></i>
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main class="main">
+    <!-- Main - Section Home -->
+    <section class="main__home" id="home">
+      <div class="home__text">
+        <h1>Desenvolvimento Front-End</h1>
+        <p>
+          Shilluê, de Viçosa do Ceará — construindo experiências digitais com
+          propósito e foco em acessibilidade.
+        </p>
+      </div>
+      <!-- menu social -->
+      <div class="home__menu">
+        <ul class="menu menu__social">
+          <li>
+            <a class="menu__link" href="https://github.com/Shillue" target="_blank">
+              <i class="menu__icon bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.linkedin.com/in/shillu%C3%AA/" target="_blank">
+              <i class="menu__icon bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="mailto:shillue09@gmail.com" target="_blank">
+              <i class="menu__icon bi bi-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="home__btn">
+        <a href="#projetos" class="btn btn__primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Main - Section Technologies -->
+    <section class="main__technologies" id="technologies">
+      <h2>Conhecimento nas principais tecnologias do mercado</h2>
+      <ul class="technologies__list">
+        <li class="technologies__item">
+          <img class="technologies__logo" src="./assets/images/technologies/html-5.png" alt="Logo do HTML" />
+        </li>
+        <li class="technologies__item">
+          <img class="technologies__logo" src="./assets/images/technologies/css.png" alt="Logo do CSS" />
+        </li>
+        <li class="technologies__item">
+          <img class="technologies__logo" src="./assets/images/technologies/js.png" alt="Logo do JavaScript" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Main - Section Projects -->
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+      <div class="projects__container">
+        <!-- card 1 -->
+        <div class="projects__card">
+          <img class="card__cover" src="./assets/images/projects/discord.png" alt="Clone Discord" />
+
+          <div class="card__body">
+            <h3 class="card__title">Clone Responsivo do Discord</h3>
+            <p class="card__description">
+              Página inicial do Discord recriada com HTML e CSS puros,
+              seguindo layout Figma da DIO.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Tecnologias: HTML5, CSS3, Flexbox</li>
+              <li class="card__item">
+                Design 100% responsivo com media queries
+              </li>
+              <li class="card__item">
+                Layout baseado no desafio da DIO (Figma)
+              </li>
+              <li class="card__item">
+                Práticas de semântica, organização e responsividade
+              </li>
+            </ul>
+
+            <!-- technologies Projects-->
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/html-5.png" alt="Logo do HTML" />
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/css.png" alt="Logo do CSS" />
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/js.png" alt="Logo do JavaScript" />
+              </li>
+            </ul>
+            <!-- Buttons -->
+            <div class="card__buttons">
+              <a class="btn btn__primary" href="https://shillue.github.io/discord-clone-responsive/" target="_blank"
+                rel="noopener noreferrer">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <a class="btn" href="https://github.com/Shillue/discord-clone-responsive.git" target="_blank"
+                rel="noopener noreferrer">
+                <span>Repositório</span>
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="projects__card card__reverse">
+          <img class="card__cover" src="./assets/images/projects/wikipediaAnimes.png" alt="Wikipedia Animes" />
+
+          <div class="card__body">
+            <h3 class="card__title">Wikipedia Animes</h3>
+            <p class="card__description">
+              Versão moderna da Wikipedia com foco em animes. HTML semântico, acessibilidade e multimídia.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">HTML5 com estrutura semântica completa</li>
+              <li class="card__item">
+                Menu lateral, navegação interna, âncoras e rodapé
+              </li>
+              <li class="card__item">
+                Imagens, vídeos incorporados e conteúdo dividido em seções
+              </li>
+              <li class="card__item">
+                Práticas de semântica, organização e responsividade
+              </li>
+            </ul>
+
+            <!-- technologies Projects-->
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/html-5.png" alt="Logo do HTML" />
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/css.png" alt="Logo do CSS" />
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/js.png" alt="Logo do JavaScript" />
+              </li>
+            </ul>
+            <!-- Buttons -->
+            <div class="card__buttons">
+              <a class="btn btn__primary" href="https://shillue.github.io/wikipedia-animes/" target="_blank"
+                rel="noopener noreferrer">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <a class="btn" href="https://github.com/Shillue/wikipedia-animes.git" target="_blank"
+                rel="noopener noreferrer">
+                <span>Repositório</span>
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="projects__card">
+          <img class="card__cover" src="./assets/images/projects/YoutubeClone.png" alt="Clone Youtube" />
+
+          <div class="card__body">
+            <h3 class="card__title">Clone YouTube com HTML e CSS</h3>
+            <p class="card__description">
+              Projeto inspirado na interface do YouTube para praticar Flexbox, layout e semântica
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Tecnologias: HTML5, CSS3, Flexbox</li>
+              <li class="card__item">Interface fiel à página inicial do YouTube
+              </li>
+              <li class="card__item">
+                Layout 100% CSS, sem JavaScript
+              </li>
+              <li class="card__item">
+                Embeds, botões, navegação e sugestão de vídeos
+              </li>
+            </ul>
+
+            <!-- technologies Projects-->
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/html-5.png" alt="Logo do HTML" />
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/css.png" alt="Logo do CSS" />
+              </li>
+              <li class="technologies__item">
+                <img class="technologies__logo" src="./assets/images/technologies/js.png" alt="Logo do JavaScript" />
+              </li>
+            </ul>
+            <!-- Buttons -->
+            <div class="card__buttons">
+              <a class="btn btn__primary" href="https://shillue.github.io/wikipedia-animes/" target="_blank"
+                rel="noopener noreferrer">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <a class="btn" href="https://github.com/Shillue/wikipedia-animes.git" target="_blank"
+                rel="noopener noreferrer">
+                <span>Repositório</span>
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>  
+
+
+        <!-- link repository -->
+        <a href="https://github.com/Shillue" class="btn btn__primary" target="_blank" rel="noopener noreferrer">
+          <span>Ver Todos os Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Main - Section About -->
+    <section class="main__about" id="sobre">
+      <!-- content - 1 -->
+      <div class="about__content1">
+        <img class="about__photo" src="assets/images/perfil/avatar.jpg" alt="Foto perfil Shilluê">
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>
+            Olá! Sou Shilluê, desenvolvedora web em formação com foco em Front-End. Tenho paixão por criar interfaces modernas, acessíveis e funcionais, aliando criatividade e atenção aos detalhes. Estou aberta a oportunidades que me desafiem e me permitam crescer profissionalmente na área.
+          </p>
+          <p>
+            Possuo uma base sólida em HTML, CSS e JavaScript, e me destaco por habilidades interpessoais como comunicação clara, organização, proatividade  e resiliência. Acredito na colaboração e no aprendizado contínuo como pilares do desenvolvimento profissional e pessoal.
+          </p>
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: Básico | Espanhol: Básico</span>
+          </div>
+
+          <div class="description__buttons">
+            <a class="btn btn__primary" href="https://www.linkedin.com/in/shillu%C3%AA/" target="_blank"
+              rel="noopener noreferrer">
+              <span>Conecte-se Comigo</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a class="btn" target="_blank" rel="noopener noreferrer" href="./assets/documents/Currículo - Shilluê.pdf">
+              <span>Currículo</span>
+              <i class="bi bi-file-earmark-text"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- content - 2 - col1 -->
+      <div class="about__content2">
+        <div class="col1">
+          <!-- row1 - Formation -->
+          <div class="row1">
+            <h3>Formação Acadêmica</h3>
+            <div class="row1__formation">
+
+              <div class="formation__item">
+                <div class="about__icons">
+                  <i class="bi bi-mortarboard"></i>
+                  <h4>Análise e Desenvolvimento de Sistemas</h4>
+                </div>
+                <div class="about__icons">
+                  <i class="bi bi-bank"></i>
+                  <span>2019 - Anhanguera</span>
+                </div>
+              </div>
+
+              <div class="formation__item">
+                <div class="about__icons">
+                  <i class="bi bi-mortarboard"></i>
+                  <h4>Pós-graduação em Engenharia de Software</h4>
+                </div>
+                <div class="about__icons">
+                  <i class="bi bi-bank"></i>
+                  <span>2023 - Cenes</span>
+                </div>
+              </div>
+
+              <div class="formation__item">
+                <div class="about__icons">
+                  <i class="bi bi-mortarboard"></i>
+                  <h4>Pós-graduação em Algoritmos e Estruturas de Dados</h4>
+                </div>
+                <div class="about__icons">
+                  <i class="bi bi-bank"></i>
+                  <span>2023 - Cenes</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- row2 - experience -->
+          <div class="row2">
+            <h3>Experiência</h3>
+            <h4>Desenvolvedora Front-End em formação contínua</h4>
+            <span>2019 – Atualmente</span>
+            <p>
+              Apesar de ainda não ter atuado profissionalmente na área, sou formada em Análise e Desenvolvimento de Sistemas (2019) e possuo duas pós-graduações: uma em Engenharia de Software e outra em Algoritmos e Estruturas de Dados (2023). Desde então, venho aprofundando meus conhecimentos por meio de formações práticas, bootcamps e desenvolvimento de projetos próprios.
+            </p>
+            <ul class="about__list">
+              <li class="about__item">
+                Concluí a formação "Iniciante em Programação T6 – ONE / Alura" em 2024, com mais de 340 atividades práticas envolvendo HTML, CSS, JavaScript, Git e responsividade.
+              </li>
+              <li class="about__item">
+                Participante ativa do "Bootcamp Santander 2025 - Front-End" na DIO, com foco em acessibilidade, UI/UX e desenvolvimento web moderno.
+              </li>
+              <li class="about__item">
+                Criação de projetos como clones do Discord, YouTube e Wikipedia, aplicando HTML semântico, Flexbox, boas práticas de código e design responsivo.
+              </li>
+              <li class="about__item">
+                Aprendizado complementar sobre Inteligência Artificial aplicada ao Front-End.
+              </li>
+              <li class="about__item">
+                Formação complementar em Banco de Dados: concluí uma trilha de 5 cursos práticos em MySQL, totalizando mais de 320 atividades. Aprofundei conhecimentos desde comandos básicos e DML até modelagem de dados, otimização, segurança, stored procedures e administração de banco de dados, com foco em manipulação e consultas SQL avançadas.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- content2 - col2 -->
+        <div class="col2">
+            <h3>Cursos</h3>
+            <div id="accordion">
+              <!-- curso1 -->
+              <div class="accordion__item active">
+                <button class="accordion__header start">
+                  <span>Versionamento de Código com Git e GitHub</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body">
+                  <p>
+                    Digital Innovation One. Dez. 2023. 2h.
+                  </p>
+                  <p>
+                    O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes
+                    sistemas operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a
+                    criação e clonagem até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer
+                    e sincronizar alterações com o repositório remoto.
+                  </p>
+                </div>
+              </div>
+
+              <!-- curso 2 -->
+              <div class="accordion__item">
+                <button class="accordion__header">
+                  <span>Entendendo HTML Semântico</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body">
+                  <p>
+                    Digital Innovation One. Jul. 2025. 2h.
+                  </p>
+                  <p>Neste curso, aprofundei meus conhecimentos em HTML5 semântico, explorando elementos como
+                    <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+                    <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>,
+                    <code>&lt;nav&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;q&gt;</code>,
+                    <code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code> e <code>&lt;picture&gt;</code>. Aprendi
+                    como esses elementos melhoram a estrutura e a acessibilidade das páginas, além de compreender o
+                    impacto do HTML5 nas mudanças semânticas da web, as boas práticas para SEO e sua importância no
+                    contexto de web scraping.
+                  </p>
+                </div>
+              </div>
+
+              <!-- curso 3 -->
+              <div class="accordion__item">
+                <button class="accordion__header">
+                  <span>Trabalhando com Flexbox no CSS</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body">
+                  <p>
+                    Digital Innovation One. Jul. 2025. 2h.
+                  </p>
+                  <p>Neste curso, aprendi a utilizar o Flexbox para criar layouts flexíveis e responsivos com CSS.
+                    Estudei os conceitos fundamentais do modelo de layout flexível, os eixos principal e transversal, e
+                    como manipular a direção dos elementos com a propriedade <code>flex-direction</code>. Trabalhei
+                    também com <code>flex-wrap</code> para controlar a quebra de linhas e colunas, e com
+                    <code>justify-content</code>, <code>align-items</code> e <code>align-content</code> para alinhar
+                    elementos de forma precisa dentro do container. Aprofundei-me nas propriedades <code>gap</code>
+                    (espaçamento), <code>order</code> (ordenação), <code>flex-grow</code>, <code>flex-shrink</code> e
+                    <code>flex-basis</code>, além de aprender o uso do shorthand <code>flex</code> e
+                    <code>align-self</code> para ajustes individuais. Esse conhecimento me permitiu desenvolver
+                    estruturas mais modernas, limpas e adaptáveis para diferentes tamanhos de tela.
+                  </p>
+                </div>
+              </div>
+
+              <!-- curso 4 -->
+              <div class="accordion__item">
+                <button class="accordion__header end">
+                  <span>Fundamentos do CSS</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body end">
+                  <p>
+                    Digital Innovation One. Jul 2025. 3h.
+                  </p>
+                  <p> No curso "Fundamentos do CSS", estudei desde os conceitos básicos do CSS até práticas essenciais
+                    para estilização de páginas web. Aprendi o que é o CSS, suas formas de declaração e como ele pode
+                    ser utilizado para criar layouts visuais personalizados. Explorei o uso de seletores (tags, IDs,
+                    classes, universais e por atributos), combinadores (agrupamento, descendente, filho e irmão), além
+                    de técnicas para depuração. Também me aprofundei nas propriedades de dimensionamento e espaçamento,
+                    incluindo <code>width</code>, <code>height</code>, <code>max-width</code>, <code>min-height</code>,
+                    <code>margin</code>, <code>padding</code> e <code>box-sizing</code>, essenciais para o controle
+                    preciso da estrutura visual de um site.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Main Section Contact -->
+    <section id="contato" class="contact">
+      <h2>Contate-me</h2>
+      <p>Estou disponível para serviços e novas conexões. Contate-me via
+        e-mail e conecte-se comigo através das minhas redes sociais.
+      </p>
+
+      <!-- menu social -->
+      <div class="home__menu">
+        <ul class="menu menu__social">
+          <li>
+            <a class="menu__link" href="https://github.com/Shillue" target="_blank">
+              <i class="menu__icon bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.linkedin.com/in/shillu%C3%AA/" target="_blank">
+              <i class="menu__icon bi bi-linkedin"></i>
+              <span>Linkedin</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="mailto:shillue09@gmail.com" target="_blank">
+              <i class="menu__icon bi bi-envelope"></i>
+              <span>Gmail</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="mailto:shillue09@gmail.com" class="btn btn--primary">
+        <span class="email">shillue09@gmail.com</span>
+      </a>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Challenge "Building Your Front-End Portfolio from Scratch" by <a href="https://www.dio.me/"
+        target="_blank">DIO</a>. Coded by <a href="https://github.com/Shillue" target="_blank">Shilluê</a>.
+    </p>
+  </footer>
+
+  <script type="module" src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
