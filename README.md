@@ -71,7 +71,7 @@ Acesse aqui: [Ver Portfólio Online](https://shillue.github.io/portfolio-front-e
 ## 🚀 Como Executar Localmente
 - Clone este repositório:
 ```brash
-git clone https://github.com/seuusuario/seu-repositorio.git
+git clone https://github.com/Shillue/portfolio-front-end-dio.git
 ```
 -  Abra o arquivo index.html no seu navegador.  
 - Explore as funcionalidades interativas e estilos disponíveis.  
